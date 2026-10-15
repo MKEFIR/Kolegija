@@ -189,7 +189,7 @@ aside {
 
 
 
-/*////////////////////Main////////////////////*/
+/*////////////////////Cental Main////////////////////*/
 #central {
     display: flex;
     align-items: center;
@@ -207,7 +207,7 @@ aside {
     box-shadow: 0 0 10px 10px var(--body-color) inset;
 }
 
-
+/*////////////////////Main////////////////////*/
 main {
    width: calc(100%-1rem);
    min-height: 50vw;
@@ -231,28 +231,30 @@ grid-area: article;
 grid-area: section;
 }
 
-
+/*////////////////////Back Button////////////////////*/
 /*Przycisk do podstawowej strony*/
 #back {
 font-size: clamp(2rem, calc(1vw + 0.5 rem), 4rem);
+font-weight: bold;
 text-decoration: inherit;
 margin: 2.5rem 3rem;
 padding: 0.5rem;
-color: var(--color-3);
+color: var(--text-color-1);
+background-color: var(--body-color);
 border-radius: 5px;
-border-bottom: solid 1px var(--color-1);
-border-top: solid 2px var(--color-4);
+border-bottom: solid 2px var(--text-color-1);
+border-top: solid 2px var(--text-color-1);
 align-items: center;
 z-index: 1;
 position: absolute;
-background-color: #EFF2F7;
 }#back:before{
 content: "← "; 
 align-items: center;
 }#back:hover {
-color: var(--color-2);
+color: var(--text-color-2);
 box-shadow: 12px 12px 12px rgpa(0, 0, 0, 0.1), -10px -10px -10px white;
-border-bottom:  var(--color-2);
+border-top: solid 1px var(--text-color-2);
+border-bottom: solid 1px var(--text-color-2);
 }#back:active{
 color: var(--color-1);
 }
