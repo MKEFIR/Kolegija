@@ -383,15 +383,6 @@ color: var(--color-1);
 
 
 
-/*////////////////////Table////////////////////*/
-table, th, td {
-   border: solid 1px black;
-   padding: 0.5rem;
-}
-/*////////////////////Table////////////////////*/
-
-
-
 /*////////////////////Footer////////////////////*/
 footer{
    background-color: var(--footer-color);

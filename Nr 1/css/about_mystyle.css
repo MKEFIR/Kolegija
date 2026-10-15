@@ -11,7 +11,7 @@ main article:nth-child(1) {
     background-size: cover;
     border-radius: 50px;
      box-shadow: 0 0 10px 10px var(--body-color) inset;
-}main article:nth-child(1) h2{
+}main article:nth-child(2) h2{
 
 }
 
@@ -26,16 +26,21 @@ margin: 0 auto;
 
 
 .box{
-background-color: var(--color-4);
-border: solid 1px var(--color-1);
+background-color: var(--body-color);
+border: solid 2px var(--color-b);
 border-radius: 10px;
 padding: 1rem;
 
 }.box h3{
 padding: 0.5rem;
+font-size: 110%;
+display: flex;
+justify-content: center;
 align-items: center;
 text-align: center;
-border-bottom: solid 1px var(--color-1);
+border-bottom: solid 1px var(--color-b);
+height: 2rem;
+color: var(--);
 }.box p{
 padding: 0.5rem;
 }
@@ -53,6 +58,9 @@ padding: 0.5rem;
 
 
 main {
+h2 {color: var(--color-b);
+    font-size: 1.5rem;
+font-weight: bold;}
 
 article:nth-child(1) {  
     h2 {color: var(--color-b);
@@ -65,14 +73,6 @@ main article:nth-child(4) {
     border-top: solid 1px var(--color-1);
     color: var(--text-color);
     position: relative;
-}
-main article:nth-child(4) p:before {
-background-image: url(../images/TGLabs_logo_transparent.webp);
-height: 1rem;
-width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
 }
 main article:nth-child(4) a{
 position: absolute;
