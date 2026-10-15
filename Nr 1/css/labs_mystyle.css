@@ -24,13 +24,26 @@ h2{
 
 
 /*////////////////////Table////////////////////*/
-table{
-    margin: 0 auto;
-
-}
-
 table, th, td {
    border: solid 1px var(--color-b);
-   padding: 0.5rem;
+   padding: 1.5rem;
+   vertical-align:top;
+}
+div#table {
+    overflow-x:auto ;}
+table{
+    width: 100%;
+    margin: 0 auto;
+border: solid 3px var(--color-b);
+line-height: 120%;
+}
+tr:nth-child(3){
+    border-top: solid 2px var(--color-b);
+}
+
+
+
+img:nth-child(1){
+width: auto;
 }
 /*////////////////////Table////////////////////*/

@@ -41,9 +41,9 @@ opacity: 0.5;
 }#logo img{
 width: 75%;
 }#logo p{
-color: var(--color-4);
+color: var(--text-index);
 font-size: 0.75rem;
-text-shadow: 1px 1px var(--color-3);
+text-shadow: 1px 1px whitesmoke;
 }
 
 
@@ -64,7 +64,7 @@ grid-area: footer;
 h1 {
     font-size: 1.5rem;
     font-weight: 500;
-    color: var(--color-4);
+    color: var(--text-index);
 }
 content article{
     width: 100%;
@@ -72,27 +72,27 @@ content article{
 }content article p{
     font-size: 0.9rem;
     padding: 1.5rem 0;
-    color: var(--color-4);
+    color: var(--text-index);
 }
 #about {
     font-size: 1rem;
-border: solid 0.15rem var(--color-2);
-background-color: var(--color-3);
+border: solid 0.15rem var(--text-active);
+background-color: var(--body-color);
 border-radius: 0.5rem;
 padding: 0.5rem;
 text-decoration: inherit;
-color: var(--color-4);
+color: var(--text-color-1);
 margin: 2rem;
 transition: all 200ms;
 visibility: hidden;
 }#about:hover {
-border: solid 0.15rem var(--color-1);
-background-color: var(--color-2);
-color: var(--color-4);
+border: solid 0.15rem var(--body-color);
+background-color: var(--text-active);
+color: var(--text-color-1);
 
 } 
 blockquote{
-color: var(--color-4);
+color: var(--text-index);
 width: 25%;
 font-style: italic;
 font-size: 1rem;
@@ -119,18 +119,57 @@ content: '"';
     position: absolute;
     font-size: 1rem;
     font-weight: bold;
-    color: var(--color-4);
+    color: var(--text-index);
     bottom: 1rem;
     right: 1rem;
-    border-bottom: solid 2px var(--color-4);
+    border-bottom: solid 2px var(--text-index);
 }
 /*////////////////////Main////////////////////*/
+
+
+
+/*////////////////////Maps////////////////////*/
+.maps {
+   height: 20rem;
+   width: 100%;
+   background-image: url(../images/world-map-dotted-transparent.svg);
+   background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20rem -15rem;
+    border-bottom: solid 1px var(--color-b);
+    position: relative;
+}
+.maps h2 {
+   color: var(--text-color-2);
+   font-size: 2rem;
+   font-weight: bold;
+   position: absolute;
+   left: 1rem;
+   bottom: 9rem;
+   align-items: center;
+}.maps p {
+   color: var(--text-color-2);
+   font-size: 1.5rem;
+   position: absolute;
+   bottom: 3rem;
+   left: 2rem;
+   width: 25%;
+}
 
 
 
 /*////////////////////Section////////////////////*/
 section{
 padding: 1rem 20rem 5rem 20rem;
+}
+section h3{
+    display: flex;
+        width: 10rem;
+    height: 10rem;
+flex-basis: 100%;
+align-items: center;
+font-size: 2rem;
+
 }
 section p{
     display: flex;

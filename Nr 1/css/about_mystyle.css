@@ -11,8 +11,10 @@ main article:nth-child(1) {
     background-size: cover;
     border-radius: 50px;
      box-shadow: 0 0 10px 10px var(--body-color) inset;
-}main article:nth-child(2) h2{
-
+}main article:nth-child(1) h2{
+color: var(--text-color-2);
+font-size: 2rem;
+font-weight: bold;
 }
 
 
@@ -20,47 +22,38 @@ main article:nth-child(1) {
  display: grid;
  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
 gap: 1rem;
-width: fit-content;
-margin: 0 auto;
+padding: 0 1rem;
+
 }
 
 
 .box{
 background-color: var(--body-color);
-border: solid 2px var(--color-b);
+border: solid 2px var(--text-color-2);
 border-radius: 10px;
 padding: 1rem;
 
 }.box h3{
 padding: 0.5rem;
-font-size: 110%;
+font-size: 120%;
+font-weight: 510;
 display: flex;
 justify-content: center;
 align-items: center;
 text-align: center;
-border-bottom: solid 1px var(--color-b);
+border-bottom: solid 1px var(--text-color-2);
 height: 2rem;
-color: var(--);
+color: var(--text-color-2);
 }.box p{
 padding: 0.5rem;
 }
-@media (max-width: 1300px) {
-    .about-box {
- grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-    }}
-@media (max-width: 500px) {
-    .about-box {
- grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-    }}
 
 
 
 main {
-h2 {color: var(--color-b);
+h2 {color: var(--text-color-2);
     font-size: 1.5rem;
-font-weight: bold;}
+    font-weight: bold;}
 
 article:nth-child(1) {  
     h2 {color: var(--color-b);
@@ -70,7 +63,7 @@ font-weight: bold;}
 
 
 main article:nth-child(4) {
-    border-top: solid 1px var(--color-1);
+    border-top: solid 1px var(--text-color-2);
     color: var(--text-color);
     position: relative;
 }
@@ -84,19 +77,19 @@ font-size: 1.3rem;
 padding: 0.3rem 0.4rem 0.4rem 0.4rem;
 text-transform: uppercase;
 border-radius: 5px;
-border-bottom: solid 1px var(--color-1);
-border-top: solid 2px var(--border);
+border-bottom: solid 1px var(--news-border-bottom);
+border-top: solid 2px var(--news-border-top);
 }
 main article:nth-child(4) a:after{
 content: " →"; 
 align-items: center;
 }main article:nth-child(4) a:hover{
-color: var(--color-2);
+color: var(--text-color-2);
 box-shadow: 12px 12px 12px rgpa(0, 0, 0, 0.1), -10px -10px -10px white;
-border-bottom:  var(--color-1);
-border-top:  var(--news-border);
+border-bottom:  var(--news-border-bottom);
+border-top:  var(--news-border-top);
 }main article:nth-child(4)  a:active{
-color: var(--color-1);
+color: var(--text-color-1);
 }
 
 

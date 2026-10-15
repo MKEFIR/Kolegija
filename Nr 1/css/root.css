@@ -5,12 +5,18 @@
 --nav-bar-hover:  rgb(133, 169, 223);
 --text-active: rgb(133, 169, 223);
 --color-active: rgb(228, 228, 228);
+--nav-shadov: rgba(0, 0, 0, 0.1); 
+    
+    --text-color-1: black;
+    --text-color-2: #2C4883;
+    --text-index: white;
 
 --body-color: #EFF2F7;
 --news-color: #EFF2F7;
---news-border: white;
+    --news-border-bottom: #0C1D2D;
+    --news-border-top: white;
 --aside-color: aliceblue;
---text-bright-color: black;
+--text-bright-color: #2C4883;
 --text-dark-color: whitesmoke;
 --text-dark-hover: #2C4883;
 
@@ -21,40 +27,41 @@
 --footer-border: #2C4883;
 
 --color-b: #2C4883;
---color-0: #EFF2F7;
---color-1: #0C1D2D;
---color-2: #2C4883;
---color-3: #4261a3;
---color-4: whitesmoke;
---color-5: #2C4883;
 --border: white;
---text-color: black;
 
 --background: url(../images/Background.png);
 --tg-logo: url(../images/Terra_Group_logo.png);
 --fb-icon: url(../images/SM/facebook.png);
 --in-icon: url(../images/SM/instagram.png);
 --x-icon: url(../images/SM/logo-black.png);
+--x-icon-hover: url(../images/SM/logo-white.png);
 --lin-icon: url(../images/SM/linkedin.png);
 
 --background: url(../images/Background.png);
 --about: url(../images/categories/person_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg);
 --gallery: url(../images/categories/image_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg);
 --contacts: url(../images/categories/contacts_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg);
---labs: url(../images/categories/labs.png);
+--labs: url(../images/categories/labs_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg);
 --forms: url(../images/categories/grading_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg);
+--pin: url(../images/location_on_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg);
 }@media (prefers-color-scheme: dark){
 :root {/*Góra*/
---nav-bar-color: #2a2a2b;
+--nav-bar-color: #05111B;
 --nav-menu-color: rgb(75, 75, 75);
 --text-nav-bar:#EFF2F7;
 --nav-bar-hover: #2C4883;
 --text-active: #2C4883;
 --color-active: rgb(56, 56, 56);
+--nav-shadov: rgba(255, 255, 255, 0.2);
 
---body-color: rgb(122, 122, 122);
---news-color: rgb(122, 122, 122);
---news-border: rgb(156, 155, 155);
+    --text-color-1: white;
+    --text-color-2: rgb(133, 169, 223);
+    --text-index: white;
+
+--body-color: #05111B;
+--news-color: #0C1D2D;
+    --news-border-bottom: #1a2d57;
+    --news-border-top: #2C4883;
 --aside-color: rgb(24, 38, 51);
 --text-bright-color: whitesmoke;
 --text-dark-color: black;
@@ -67,20 +74,14 @@
 --footer-border: #2C4883;
 
 --color-b: rgb(133, 169, 223);
---color-0: #EFF2F7;
---color-1: #0C1D2D;
---color-2: #2C4883;
---color-3: #4261a3;
---color-4: whitesmoke;
---color-5: #2C4883;
 --border: rgb(156, 155, 155);
---text-color: #EFF2F7;
 
 --background: url(../images/Background_dark.png);
 --tg-logo: url(../images/TerraGroup_logo.png);
 --fb-icon: url(../images/SM/facebook-white.png);
 --in-icon: url(../images/SM/instagram-white.png);
 --x-icon: url(../images/SM/logo-white.png);
+--x-icon-hover: url(../images/SM/logo-black.png);
 --lin-icon: url(../images/SM/linkedin-white.png);
 
 --about: url(../images/categories/dark/person_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg);
@@ -88,4 +89,5 @@
 --contacts: url(../images/categories/dark/contacts_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg);
 --labs: url(../images/categories/dark/labs_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg);
 --forms: url(../images/categories/dark/grading_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg);
+--pin: url(../images/location_on_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg);
 }}

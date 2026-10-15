@@ -1,5 +1,5 @@
 
-body{min-height: 50vw; background-color: var(--body-color); color: var(--text-bright-color); font-family: Arial, Helvetica, sans-serif;} 
+body{min-height: 50vw; background-color: var(--body-color); color: var(--text-color-1); font-family: "Roboto", sans-serif; overflow-x: unset  ;} 
 /*Podstawowy styl do wszystkiego*/
 body::after{
    position: absolute;
@@ -13,7 +13,7 @@ body::after{
    content: url(../images/linkedin-color.png);
 
 }/*Zaladowac zdjecia*/
-
+b {font-weight: bold;}
 .header-podstawowy {
    position: sticky;
    top: 0;
@@ -24,7 +24,7 @@ background-color: var(--nav-bar-color);
 display: flex;
 justify-content: space-between;
   align-items: center;
-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+box-shadow: 3px 3px 5px var(--nav-shadov);
 }
 .pod-logo {
    display: flex;
@@ -135,7 +135,7 @@ background-repeat: no-repeat;
 background-size: cover;
 }
 #x:hover {
-background-image: url(../images/SM/logo-white.png);}
+background-image: var(--x-icon-hover);}
 
 #lin {
 height: 2rem;
@@ -156,7 +156,7 @@ aside {
    text-align: left;
    padding: 0.5vw;
    opacity: 0.99;
-   color: var(--text-bright-color);
+   color: var(--text-color-1);
 }
 
 /*////////////////////Disclaimer////////////////////*/
@@ -173,7 +173,7 @@ aside {
 
 .menu-icon-dis {
     display: block;
-    color: var(--text-bright-color);
+    color: var(--text-color-1);
     padding-left: 1rem;
     font-size: 1rem;
     cursor: pointer;
@@ -197,6 +197,7 @@ aside {
     color: var(--color-b);
     width: 100%;
     height: 5rem;
+    padding-top: 1.5rem;
     font-weight: bold;
     font-size: clamp(1.7rem, calc(1vw + 0.5rem), 3rem);
     background-image: var(--background);
@@ -204,10 +205,6 @@ aside {
     background-size: cover;
     border-radius: 50px;
     box-shadow: 0 0 10px 10px var(--body-color) inset;
-}@media (max-width: 500px){
-    #central {
-    justify-content: right;
-    }
 }
 
 
@@ -271,6 +268,44 @@ article p, h2, h3{
 padding: 0.5rem;
 }
 
+
+
+/*////////////////////Maps////////////////////*/
+.maps {
+   height: 40rem;
+   width: 100%;
+   background-image: url(../images/world-map-dotted-transparent.svg);
+   background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -25rem;
+    border-bottom: solid 1px var(--color-b);
+    position: relative;
+}
+.maps h2 {
+   color: var(--text-color-2);
+   font-size: 1.7rem;
+   font-weight: bold;
+   position: absolute;
+   left: 1rem;
+   top: 5rem;
+   align-items: center;
+}.maps p {
+   color: var(--text-color-2);
+   font-size: 1.3rem;
+   position: absolute;
+   top: 9rem;
+   left: 2rem;
+   width: 75%;
+}
+.maps-shadow{
+   background-color: var(--body-color);
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   opacity: 0.5;
+}
 /*////////////////////News////////////////////*/
 .news{
    display: grid;
@@ -293,13 +328,13 @@ padding: 1rem 1rem 4rem 1rem;
 }.news h2 {
 text-align: left;
 padding: 1rem 2rem 0.2rem 2rem;
-color: var(--color-3);
+color: var(--text-color-2);
 font-size: 1.5rem;
-border-top: solid 1px var(--color-1);
+border-top: solid 1px var(--color-b);
 }.news h3 {
 text-align: left;
 padding: 0.2rem 2rem 0.2rem 3rem;
-color: var(--color-3);
+color: var(--text-color-2);
 font-size: 1rem;
 }
 
@@ -310,7 +345,7 @@ font-size: 1rem;
     flex-shrink: 0;
     width: 10rem;
     height: 32rem;
-    border: solid 1px var(--color-5);
+    border: solid 1px var(--text-color-2);
     border-radius: 10px;
     position: relative;
     display: flex;
@@ -321,43 +356,43 @@ font-size: 1rem;
 .news-box p:nth-child(1){
 text-align: right;
 padding: 0.2rem;
-color: var(--color-3);
-text-shadow: 1px 1px var(--color-3);
+color: var(--text-color-2);
+text-shadow: 1px 1px var(--text-color-2);
 font-size: 0.9rem;
-border-bottom: solid 1px var(--color-1);
+border-bottom: solid 1px var(--text-color-1);
 }.news-box p:nth-child(2){
 text-align: left;
 padding: 0.2rem;
-color: var(--color-2);
-text-shadow: 1px 1px var(--color-3);
+color: var(--text-color-2);
+text-shadow: 1px 1px var(--text-color-2);
 font-size: 1.5rem;
 }.news-box p:nth-child(3){
 text-align: left;
 padding: 0.2rem;
-color: var(--color-1);
+color: var(--text-color-1);
 font-size: 1.1rem;
 }.news-box a{
 position: absolute;
 left: 1rem;
 bottom: 1rem;
 text-decoration: none;
-color: var(--text-bright-color);
+color: var(--text-color-1);
 font-size: 1.3rem;
 padding: 0.3rem 0.4rem 0.4rem 0.4rem;
 text-transform: uppercase;
 border-radius: 5px;
-border-bottom: solid 1px var(--color-1);
-border-top: solid 2px var(--news-border);
+border-bottom: solid 1px var(--news-border-bottom);
+border-top: solid 2px var(--news-border-top);
 }.news-box a:after{
 content: " →"; 
 align-items: center;
 }.news-box a:hover{
-color: var(--color-2);
+color: var(--text-color-2);
 box-shadow: 12px 12px 12px rgpa(0, 0, 0, 0.1), -10px -10px -10px white;
 border-bottom:  var(--color-2);
 border-top:  var(--color-2);
 }.news-box a:active{
-color: var(--color-1);
+color: var(--text-color-1);
 }
 .news-box:nth-child(1) {background-image: url(#);}
 .news-box:nth-child(2) {background-image: url(#);}
@@ -371,7 +406,7 @@ color: var(--color-1);
    .news-box{width: 0rem;}
 }@media (max-width: 1200px) {
    .news-scroller{width: 13rem;}
-   .news-box{width: 13rem; height: 30rem;}
+   .news-box{width: 13rem; height: 42rem;}
 }@media (min-width: 1201px) {
    .news-scroller{width: 20rem;}
    .news-box{width: 20rem; height: 25rem;}
@@ -407,6 +442,18 @@ footer{
     background-position: left;
    flex-grow: 5;
 
+}.footer-box:nth-child(4) {
+   width: fit-content;
+   display: flex ;
+   flex-direction: column;
+}.footer-box:nth-child(4) a {
+   padding: 0.1rem;
+   text-decoration: none;
+   color: var(--footer-text);
+}.footer-box:nth-child(4) a:hover {
+color: var(--footer-text-hover);
+}.footer-box:nth-child(4) a:active {
+color: var(--text-active);
 }
 .pod-nav-footer{
 display: grid;
@@ -608,7 +655,7 @@ main {
   }
  .pod-Search-SM{
     display: none;
- }.footer-box:nth-child(2){
+ }.footer-box:nth-child(2), .footer-box:nth-child(4){
     display: none;
 }}
 @media (max-width: 1900px){
