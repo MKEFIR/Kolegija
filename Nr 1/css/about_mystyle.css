@@ -63,9 +63,16 @@ font-weight: bold;}
 
 
 main article:nth-child(4) {
+    background-image: var(--labs-logo);
+    background-repeat: no-repeat;
+    background-size: 25% auto;
+    background-position: 90% 25%;
     border-top: solid 1px var(--text-color-2);
     color: var(--text-color);
     position: relative;
+}
+main article:nth-child(4) h2{
+    width: 70%;
 }
 main article:nth-child(4) a{
 position: absolute;
@@ -92,11 +99,3 @@ border-top:  var(--news-border-top);
 color: var(--text-color-1);
 }
 
-
-@media (max-width: 1350px){
-    .news-scroller{ width: 15rem;
- .news-box {width: 15rem; height: 35rem;}
-}}@media (max-width: 1300px){
-    .news-scroller{ width: 17rem;
- .news-box {width: 17rem; height: 33rem;}
-}}

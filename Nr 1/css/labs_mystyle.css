@@ -15,20 +15,14 @@ h2{
 
 
 
-
-
-
-
-
-
-
 /*////////////////////Table////////////////////*/
 table, th, td {
    border: solid 1px var(--color-b);
    padding: 1.5rem;
    vertical-align:top;
 }
-div#table {
+.table {
+    width: 100%;
     overflow-x:auto ;}
 table{
     width: 100%;

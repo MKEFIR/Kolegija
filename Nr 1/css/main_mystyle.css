@@ -19,7 +19,7 @@ b {font-weight: bold;}
    top: 0;
    z-index: 1000;
 width: 100%;
-height: 6rem;
+height: 3rem;
 background-color: var(--nav-bar-color);
 display: flex;
 justify-content: space-between;
@@ -34,17 +34,26 @@ box-shadow: 3px 3px 5px var(--nav-shadov);
 
 }
 .pod-logo #img {
-       height: 4rem; 
-       width: 12rem;
-       margin-top: 0.5rem;
-      margin-left: 0.5rem;
+       height: 3rem; 
+       width: 9rem;
+       margin-top: 0.2rem;
+      margin-left: 0.2rem;
        background-image: var(--tg-logo);
        background-repeat: no-repeat;
        background-size: cover;
 
 }
 
-
+@media (min-width: 800px) {
+.header-podstawowy {
+height: 6rem;}
+.pod-logo #img {
+       height: 4rem; 
+       width: 12rem;
+       margin-top: 0.5rem;
+      margin-left: 0.5rem;
+}
+}
 /*Nawigacja po stronach*/
 .nav {
    height: 100%;
@@ -153,12 +162,47 @@ background-image: url(../images/SM/linkedin-color.png);}
 aside {
    border-radius: 5px;
    background-color: var(--aside-color);
-   text-align: left;
    padding: 0.5vw;
-   opacity: 0.99;
    color: var(--text-color-1);
 }
-
+.labs-about {
+    background-image: var(--labs-logo);
+    background-repeat: no-repeat;
+    background-size: 25% auto;
+    background-position: 100% 10%;
+    border-bottom: solid 1px var(--text-color-2);
+    color: var(--text-color);
+    position: relative;
+    padding: 1rem;
+    height: 11rem;
+}.labs-about h2 {padding: 1rem;}
+.labs-about a{
+position: absolute;
+left: 0rem;
+bottom: 0.5rem;
+text-decoration: none;
+color: inherit;
+font-size: 1.3rem;
+padding: 0.3rem 0.4rem 0.4rem 0.4rem;
+text-transform: uppercase;
+border-radius: 5px;
+border-bottom: solid 1px var(--news-border-bottom);
+border-top: solid 2px var(--news-border-top);
+}
+.labs-about a:after{
+content: " →"; 
+align-items: center;
+}.labs-about a:hover{
+color: var(--text-color-2);
+box-shadow: 12px 12px 12px rgpa(0, 0, 0, 0.1), -10px -10px -10px white;
+border-bottom:  var(--news-border-bottom);
+border-top:  var(--news-border-top);
+}.labs-about a:active{
+color: var(--text-color-1);
+}
+@media(max-width: 1200px) {
+   .labs-about {padding-bottom: 2rem;}
+}
 /*////////////////////Disclaimer////////////////////*/
 .disclaimer {
     position: fixed;
@@ -209,6 +253,10 @@ aside {
 
 /*////////////////////Main////////////////////*/
 main {
+h2 {color: var(--text-color-2);
+    font-size: 1.5rem;
+    font-weight: bold;}
+
    width: calc(100%-1rem);
    min-height: 50vw;
 
@@ -229,45 +277,6 @@ grid-area: content;
 grid-area: article;
 }main section{
 grid-area: section;
-}
-
-/*////////////////////Back Button////////////////////*/
-/*Przycisk do podstawowej strony*/
-#back {
-font-size: clamp(2rem, calc(1vw + 0.5 rem), 4rem);
-font-weight: bold;
-text-decoration: inherit;
-margin: 2.5rem 3rem;
-padding: 0.5rem;
-color: var(--text-color-1);
-background-color: var(--body-color);
-border-radius: 5px;
-border-bottom: solid 2px var(--text-color-1);
-border-top: solid 2px var(--text-color-1);
-align-items: center;
-z-index: 1;
-position: absolute;
-}#back:before{
-content: "← "; 
-align-items: center;
-}#back:hover {
-color: var(--text-color-2);
-box-shadow: 12px 12px 12px rgpa(0, 0, 0, 0.1), -10px -10px -10px white;
-border-top: solid 1px var(--text-color-2);
-border-bottom: solid 1px var(--text-color-2);
-}#back:active{
-color: var(--color-1);
-}
-
-content {
-   width: 100%;
-}@media (max-width: 800px){
-   content {
-   width: 125%;
-}
-}
-article p, h2, h3{
-padding: 0.5rem;
 }
 
 
@@ -403,10 +412,13 @@ color: var(--text-color-1);
 .news-box:nth-child(5) {background-image: url(#);}
 .news-box:nth-child(6) {background-image: url(#);}
 
-@media (max-width: 950px) {
+@media (max-width: 800px) {
    .news-scroller{width: 0rem;}
    .news-box{width: 0rem;}
-}@media (max-width: 1200px) {
+}@media (min-width: 801px) {
+   .news-scroller{width: 15rem;}
+   .news-box{width: 15rem;}
+}@media (min-width: 1200px) {
    .news-scroller{width: 13rem;}
    .news-box{width: 13rem; height: 42rem;}
 }@media (min-width: 1201px) {
@@ -579,13 +591,15 @@ text-shadow: 1px 1px #4261a3;
   .pod-nav ul {
     display: flex;
     flex-direction: column;
-    gap: 1;
+    gap: 1rem;
     position: absolute;
     top: 100%;
     right: 0;
     width: 100%;
+    height: 200vw;
     background: var(--nav-menu-color);
     z-index: 10;
+    padding-top: 1rem;
   }.pod-nav ul {
    display: flex;
    flex-direction: column;
@@ -595,7 +609,7 @@ border-bottom: solid black 1px;
   }.pod-nav ul li a {
     color: var(--text-nav-bar);
     width: 100%;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     padding: 0.1rem 2rem;
   }
 

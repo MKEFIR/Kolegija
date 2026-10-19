@@ -1,10 +1,12 @@
-/*////////////////////Anketa////////////////////*/
+/*////////////////////Anketa//////////////{//////*/
+
+
 
 form {
     display: flex;
     flex-direction: column;
     color: var(--text-bright-color);
-    width: 100%;
+    width: calc(100%-1.5rem);
     flex-grow: 1;
 }
 
@@ -36,6 +38,13 @@ fieldset {
     padding: 10px;
     border-radius: 5px;
 }/*Deklaracija*/
+fieldset:nth-child(6) input{
+    height: 3rem;
+}
+fieldset:nth-child(6) input:nth-child(2){
+    height: 1rem;
+}
+
 fieldset:nth-child(7) {
     border: 0px;
     margin-bottom: 10px;
@@ -58,7 +67,7 @@ fieldset div label{
 #submit-btn {
     padding: 1rem 0;
 }
-@media (max-width: 950px) {
+@media (max-width: 800px) {
    aside {
     position: absolute;
     visibility: hidden;

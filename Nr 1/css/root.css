@@ -15,7 +15,7 @@
 --news-color: #EFF2F7;
     --news-border-bottom: #0C1D2D;
     --news-border-top: white;
---aside-color: aliceblue;
+--aside-color: rgba(240, 248, 255, 0.5);
 --text-bright-color: #2C4883;
 --text-dark-color: whitesmoke;
 --text-dark-hover: #2C4883;
@@ -37,7 +37,8 @@
 --x-icon-hover: url(../images/SM/logo-white.png);
 --lin-icon: url(../images/SM/linkedin.png);
 
---background: url(../images/Background.png);
+
+--labs-logo: url(../images/TGLabs_logo_transparent.webp);
 --about: url(../images/categories/person_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg);
 --gallery: url(../images/categories/image_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg);
 --contacts: url(../images/categories/contacts_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg);
@@ -62,7 +63,7 @@
 --news-color: #0C1D2D;
     --news-border-bottom: #1a2d57;
     --news-border-top: #2C4883;
---aside-color: rgb(24, 38, 51);
+--aside-color: rgba(24, 38, 51, 0.2);
 --text-bright-color: whitesmoke;
 --text-dark-color: black;
 --text-dark-hover: #2C4883;
@@ -84,6 +85,7 @@
 --x-icon-hover: url(../images/SM/logo-black.png);
 --lin-icon: url(../images/SM/linkedin-white.png);
 
+--labs-logo: url(../images/TGLabs_logo_transparent_dark.png);
 --about: url(../images/categories/dark/person_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg);
 --gallery: url(../images/categories/dark/image_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg);
 --contacts: url(../images/categories/dark/contacts_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg);

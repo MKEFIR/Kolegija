@@ -46,9 +46,9 @@
         </div></div>
     </header>
  <!-- Navigacija -->
-<a id="back" href="../index.html">Į Pagrindini</a>
 
 <main id="main-form">
+    <content>
 <form action="Anketa.html" method="post">
    <h2 id="central">Anketa</h2>
           <fieldset>
@@ -113,11 +113,11 @@
           <fieldset>
             <legend>Papildoma informacija</legend>
             <label for="vardas">Kodėl norite prisijungti prie „TerraGroup“?</label>
-            <input type="text" id="vardas" name="vardas" required="required" placeholder="..."><br><br><br><br>
+            <textarea id="vardas" name="opinion" required="required" rows="3" placeholder="..."></textarea><br><br><br><br>
             <label for="data">Galimybė pradėti</label>
             <input type="date" id="data" name="data" required="required" placeholder="Pasirinkite datą..."><br><br>
             <label for="vardas">Papildomos pastabos</label>
-            <input type="text" id="vardas" name="vardas" required="required" placeholder="..."><br><br>   
+            <textarea id="vardas" name="additional" required="required" rows="3" placeholder="..."></textarea><br><br>   
           </fieldset>
           <fieldset>
             <legend>Deklaracija</legend>
@@ -128,7 +128,13 @@
           </fieldset>
             <div id="submit-btn"><input type="submit" value="Registruotis"> <input type="reset" value="Išvalyti"></div>
         </form> 
+           </content>
 <aside>
+    <div class="labs-about"><div class="labs-shadow"></div>
+        <h2>TerraGroup Labs</h2>
+        <p>TerraGroup Labs is a specialized research division dedicated to advancing scientific knowledge across biotechnology, chemical engineering, microbiology, and experimental medicine.</p>
+        <a href="../Labs/Labs.html">Read More</a>
+    </div>
     <div class="maps"><div class="maps-shadow"></div>
         <h2>OUR GLOBAL PRESENCE </h2>
         <p>Over 40 major enterprises united under the TerraGroup umbrella, with branch offices and operations spanning more than 120 countries worldwide.</p>
@@ -183,8 +189,6 @@
 
 </div></div>
     </aside>
-
-
 
 </main>
     <footer>
