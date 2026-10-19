@@ -30,8 +30,13 @@ table{
 border: solid 3px var(--color-b);
 line-height: 120%;
 }
-tr:nth-child(3){
+tbody tr:nth-child(1){
     border-top: solid 2px var(--color-b);
+    background-color: var(--table-sec);
+}tbody tr:nth-child(3){
+    background-color: var(--table-sec);
+}tbody tr:nth-child(5){
+    background-color: var(--table-sec);
 }
 
 

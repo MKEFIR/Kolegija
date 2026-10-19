@@ -10,6 +10,7 @@ background-size: cover;
 overflow: hidden;
 position: relative;
 height: 200vw;
+
 }
 #bg {
 position: absolute;
@@ -344,4 +345,12 @@ width: 123rem;
  height: 30rem;
 }#bg-q {
 width:55rem;
+}}@media (min-width: 2500px){
+#bg{
+ width:62rem;
+ height: 32rem;
+}#bg-q {
+ width:57rem;
+}content article p{
+ width: 90%;;
 }}

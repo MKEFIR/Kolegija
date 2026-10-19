@@ -27,6 +27,7 @@
 --footer-border: #2C4883;
 
 --color-b: #2C4883;
+--table-sec: rgb(226, 226, 226);
 --border: white;
 
 --background: url(../images/Background.png);
@@ -75,6 +76,7 @@
 --footer-border: #2C4883;
 
 --color-b: rgb(133, 169, 223);
+--table-sec: #1c2835;
 --border: rgb(156, 155, 155);
 
 --background: url(../images/Background_dark.png);
