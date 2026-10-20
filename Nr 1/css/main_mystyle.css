@@ -284,8 +284,8 @@ grid-area: section;
 /*////////////////////Gallery////////////////////*/
 .gallery{
    display: grid;
-   padding: 5rem 10rem;
-   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   padding: 1rem 2rem;
+   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
    gap: 5rem;
 }
 .gallery div img{
@@ -358,8 +358,14 @@ padding: 1rem 1rem 4rem 1rem;
     margin: 0 auto 1rem auto;
     width: 20rem;
     overflow-x: scroll;
-    scroll-snap-type: x proximity;  
+    scroll-snap-type: x proximity;  /*or mandatory*/
     overflow-y: hidden;
+    	background: linear-gradient(to right, var(--body-color) 15px, hsla(0,0%,100%,0)) 0 0 / 50px 100%,
+	            radial-gradient(at left, rgba(0,0,0,.2), transparent 70%) 0 0 / 15px 100%,
+	            linear-gradient(to left, var(--body-color) 15px, hsla(0,0%,100%,0)) right / 50px 100%,
+	            radial-gradient(at right, rgba(0,0,0,.2), transparent 70%) right / 15px 100%;
+	background-repeat: no-repeat;
+	background-attachment: local, scroll, local, scroll;
 }.news h2 {
 text-align: left;
 padding: 1rem 2rem 0.2rem 2rem;
