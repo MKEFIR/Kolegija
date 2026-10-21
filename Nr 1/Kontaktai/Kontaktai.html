@@ -96,15 +96,15 @@
             Atsakysime kuo greičiau.</p>
             <div class="form">
             <div>
-            <input type="text" id="vardas" name="vardas" required="required" placeholder="Vardas..."><br><br>
-            <input type="email" id="email" name="email" required="required" maxlength="15" placeholder="El. paštas..."><br><br>
+            <input type="text" id="vardas" name="vardas" required="required" placeholder="Vardas...">
+            <input type="tel" id="telefonas" name="telefonas" maxlength="15" placeholder="Telefonas...">
             </div>
             <div>
-            <input type="text" id="pavarde" name="pavarde" required="required" placeholder="Pavardė..."><br><br>
-            <input type="text" id="kompanija" name="kompanija" placeholder=Kompanija(optional)..."><br><br>
+            <input type="text" id="pavarde" name="pavarde" required="required" placeholder="Pavardė...">
+            <input type="text" id="kompanija" name="kompanija" placeholder=Kompanija(optional)...">
             </div>
             <div>
-            <input type="tel" id="telefonas" name="telefonas" maxlength="15" placeholder="Telefonas..."><br><br>
+            <input type="email" id="email" name="email" required="required" maxlength="15" placeholder="El. paštas...">
             <select id="paslaugos" name="paslaugos" required>
             <option value="" disabled selected>Kokios paslaugos jus domina?</option>
             <option value="research">Laboratorinių tyrimų asistentas</option>
@@ -117,12 +117,32 @@
             <option value="other">Kita / Neįtraukta į sąrašą pareigos</option>
             </select>
             <textarea id="vardas" name="opinion" required="required" rows="3" placeholder="Describe"></textarea>
-            </div></div>
-
+            <input type="checkbox" id="vesbutis" name="vesbutis" value="vesbutis" style="margin-left: 90px;">I acknowledge the applicant privacy notice and consent to the processing of my application.<br><br>
+            <label for="atsiskaitymas"></label></div>
+            <div id="submit-btn"><input type="submit" value="Sent"> <input type="reset" value="Reset"></div></div>
         </fieldset>
      </form>
 
-     <address></address>
+     <address>
+
+        <h3>OUR OFFICES</h3>
+
+        <p>Headquarters<br>
+        1 TerraGroup Plaza<br>
+        Norvinsk, 454000<br>
+        Russian Federation</p>
+
+        <p>Business Hours<br>
+        Mon - Fri: 9:00 - 18:00 (UTC+3)<br>
+        Sat - Sun: Closed</p>
+
+        <p>Global Offices<br>
+        View all locations</p>
+
+        <p>For urgent matters outside of business
+        hours, please contact our emergency line:<br>
+        +7 (495) 542-87-21</p>
+     </address>
 
 
     </content>

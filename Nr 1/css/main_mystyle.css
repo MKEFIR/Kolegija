@@ -537,8 +537,6 @@ gap: 10px;
 }
 .pod-nav-footer li a:hover{
    color: var(--footer-text-hover);
-}address p:hover{
-   color: var(--footer-text-hover);
 }
 
 
@@ -725,8 +723,3 @@ main {
  }.footer-box:nth-child(2), .footer-box:nth-child(4){
     display: none;
 }}
-@media (max-width: 1900px){
- .pod-Search-SM form input{
-    display: none;
- }
-}

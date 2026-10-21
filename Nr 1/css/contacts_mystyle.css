@@ -17,8 +17,7 @@ grid-template-columns: 7fr 3fr;
 }}
 content #central-contacts{grid-area: central;}
 content article{grid-area: article;}
-    content form{grid-area: form;
-        background-color: yellow;}
+    content form{grid-area: form;}
         content address{grid-area: address;
         background-color: aqua;
         min-height: 5rem;}
@@ -110,7 +109,13 @@ fieldset {
         display: grid;
     grid-template-areas: 
     "one two"
-    "three three";
+    "three three"
+    "fourth fourth";
+}
+fieldset div{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
 }
 
 fieldset div:nth-child(1) {
@@ -119,14 +124,30 @@ fieldset div:nth-child(1) {
     grid-area: two;
 }fieldset div:nth-child(3) {
     grid-area: three;
-}
-fieldset div{
-    display: flex;
-    flex-direction: column;
+}fieldset div:nth-child(4) {
+    grid-area: fourth;
+    flex-direction: row;
+    input{
+    border: 1px solid var(--text-color-2);
+    width: 6rem;
+    gap: 1rem;}
+    input:hover{
+    background-color: var(--body-color);
+    color: var(--text-color-2);
+    border: 1px solid var(--text-color-1);
+    }
+
 }
 
-input {
+input, textarea {
   width: 30%;
+  border: none;
+  border-bottom: 1px solid var(--text-color-2);
+  background-color: var(--table-sec);
+  color: var(--text-color-1);
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 1.1rem;
 }
 fieldset div:nth-child(3){
 input, textarea {
@@ -134,5 +155,28 @@ input, textarea {
 }textarea{
     resize: vertical;
 }
+
+}
+
+/*////////////////////Address////////////////////*/
+
+address {
+background-image: url(../images/terragroup_sign.png);
+background-repeat: no-repeat;
+background-size: contain;
+display: flex;
+flex-direction: column;
+padding: 1rem;
+justify-content: center;
+border-radius: 15px;
+}
+address p{
+padding: 1rem;
+
+
+}
+address p:nth-child(5){
+background-color: var(--table-sec);
+border-radius: 10px;
 
 }

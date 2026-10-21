@@ -40,10 +40,10 @@
 --x-icon-hover: url(../images/SM/logo-white.png);
 --lin-icon: url(../images/SM/linkedin.png);
 
---con-domain: url(../images/contacts/domain_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg);
---con-mail: url(../images/contacts/mail_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg);
---con-handshake: url(../images/contacts/handshake_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg);
---con-mic: url(../images/contacts/mic_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg);
+--con-domain: url(../images/contacts/domain_24dp_04306F_FILL0_wght400_GRAD0_opsz24.svg);
+--con-mail: url(../images/contacts/mail_24dp_04306F_FILL0_wght400_GRAD0_opsz24.svg);
+--con-handshake: url(../images/contacts/handshake_24dp_04306F_FILL0_wght400_GRAD0_opsz24.svg);
+--con-mic: url(../images/contacts/mic_24dp_04306F_FILL0_wght400_GRAD0_opsz24.svg);
 
 --labs-logo: url(../images/TGLabs_logo_transparent.webp);
 --about: url(../images/categories/person_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg);
@@ -117,6 +117,26 @@
     navigation: auto;
 }
 
-::view-transition-group(:root) {
+::view-transition-group(page-content) {
     animation-duration: 1s;
+}
+::view-transition-old(page-content) {
+    animation-name: slide-out;
+}
+::view-transition-new(page-content) {
+    animation-name: slide-in;
+}
+main, .maps, .category, .news {
+    view-transition-name: page-content;
+}
+
+@keyframes slide-out {
+    to {
+        translate: -100vw;
+    }
+}
+@keyframes slide-in {
+    from {
+        translate: 100vw;
+    }
 }
