@@ -285,83 +285,24 @@ grid-area: section;
 .gallery{
    display: grid;
    padding: 1rem 2rem;
-   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+   grid-template-columns: repeat(1, minmax(25rem, 1fr));
    gap: 5rem;
    perspective: 300px;
 }
-.gallery div img{
+.gallery-box img{
  aspect-ratio: 3 / 2;
   object-fit: cover;
+  max-width: 15rem;
 }
-.gallery div{
+.gallery-box{
   transition: ease-in-out 0.3s;}
-.gallery div:hover{
+.gallery-box:hover{
 /*width: calc(100% + 1rem);
 height: calc(100% + 1rem);
 left: -0.5rem;
 top: -0.5rem;*/
   transform: translateZ(0.5rem);
 position: relative;
-}
-@media (min-width: 1079px) {
- .gallery{
-   padding: 1rem 2rem;
-   grid-template-columns: repeat(1, minmax(15rem, 1fr));
-   gap: 1rem;
-}.gallery div img:hover{
-width: calc(100% + 1rem);
-height: calc(100% + 1rem);
-left: -0.5rem;
-top: -0.5rem;
-position: relative;
-column-gap: calc(100% - 1rem);
-}.gallery div img:hover .gallery{
-column-gap: calc(100% - 1rem);
-}}  @media (min-width: 1300px) {
- .gallery{
-   padding: 1rem 2rem;
-   grid-template-columns: repeat(2, minmax(17.5rem, 1fr));
-   gap: 1rem;
-}.gallery div img:hover{
-width: calc(100% + 1rem);
-height: calc(100% + 1rem);
-left: -0.5rem;
-top: -0.5rem;
-position: relative;
-column-gap: calc(100% - 1rem);
-}.gallery div img:hover .gallery{
-column-gap: calc(100% - 1rem);
-}  
-}@media (min-width: 1600px) {
- .gallery{
-   padding: 5rem 10rem;
-   grid-template-columns: repeat(2, minmax(30rem, 1fr));
-   gap: 5rem;
-}.gallery div img:hover{
-width: calc(100% + 1rem);
-height: calc(100% + 1rem);
-left: -0.5rem;
-top: -0.5rem;
-position: relative;
-column-gap: calc(100% - 1rem);
-}.gallery div img:hover .gallery{
-column-gap: calc(100% - 1rem);
-}  
-}@media (min-width: 1900px) {
- .gallery{
-   padding: 5rem 10rem;
-   grid-template-columns: repeat(3, minmax(30rem, 1fr));
-   gap: 5rem;
-}.gallery div img:hover{
-width: calc(100% + 1rem);
-height: calc(100% + 1rem);
-left: -0.5rem;
-top: -0.5rem;
-position: relative;
-column-gap: calc(100% - 1rem);
-}.gallery div img:hover .gallery{
-column-gap: calc(100% - 1rem);
-}  
 }
 
 
