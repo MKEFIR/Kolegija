@@ -311,7 +311,7 @@ position: relative;}
 height: calc(100% + 1rem);
 left: -0.5rem;
 top: -0.5rem;*/
-  transform: translateZ(0.75rem);
+  transform: translateZ(0.5rem);
 }
 .gallery h3{
       color: var(--text-color-2);

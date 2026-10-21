@@ -9,6 +9,7 @@
     
     --text-color-1: black;
     --text-color-2: #2C4883;
+    --text-color-3: #2C4883;
     --text-index: white;
 
 --body-color: #EFF2F7;
@@ -27,9 +28,10 @@
 --footer-border: #2C4883;
 
 --color-b: #2C4883;
---table-sec: rgb(226, 226, 226);
+--table-sec: #F3F8FD;
 --border: white;
 
+--bg-contacts: url(../images/bg-contacts.png);
 --background: url(../images/Background.png);
 --tg-logo: url(../images/Terra_Group_logo.png);
 --fb-icon: url(../images/SM/facebook.png);
@@ -38,6 +40,10 @@
 --x-icon-hover: url(../images/SM/logo-white.png);
 --lin-icon: url(../images/SM/linkedin.png);
 
+--con-domain: url(../images/contacts/domain_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg);
+--con-mail: url(../images/contacts/mail_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg);
+--con-handshake: url(../images/contacts/handshake_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg);
+--con-mic: url(../images/contacts/mic_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg);
 
 --labs-logo: url(../images/TGLabs_logo_transparent.webp);
 --about: url(../images/categories/person_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg);
@@ -58,6 +64,7 @@
 
     --text-color-1: white;
     --text-color-2: rgb(133, 169, 223);
+    --text-color-3: white;
     --text-index: white;
 
 --body-color: #05111B;
@@ -79,6 +86,7 @@
 --table-sec: #1c2835;
 --border: rgb(156, 155, 155);
 
+--bg-contacts: url(../images/bg-contacts_dark.png);
 --background: url(../images/Background_dark.png);
 --tg-logo: url(../images/TerraGroup_logo.png);
 --fb-icon: url(../images/SM/facebook-white.png);
@@ -86,6 +94,11 @@
 --x-icon: url(../images/SM/logo-white.png);
 --x-icon-hover: url(../images/SM/logo-black.png);
 --lin-icon: url(../images/SM/linkedin-white.png);
+
+--con-domain: url(../images/contacts/dark/domain_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg);
+--con-mail: url(../images/contacts/dark/mail_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg);
+--con-handshake: url(../images/contacts/dark/handshake_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg);
+--con-mic: url(../images/contacts/dark/mic_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg);
 
 --labs-logo: url(../images/TGLabs_logo_transparent_dark.png);
 --about: url(../images/categories/dark/person_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg);
@@ -95,3 +108,15 @@
 --forms: url(../images/categories/dark/grading_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg);
 --pin: url(../images/location_on_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg);
 }}
+
+
+
+
+
+@view-transition {
+    navigation: auto;
+}
+
+::view-transition-group(:root) {
+    animation-duration: 1s;
+}

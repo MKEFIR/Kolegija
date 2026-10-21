@@ -32,6 +32,9 @@ background-color: var(--body-color);
 border: solid 2px var(--text-color-2);
 border-radius: 10px;
 padding: 1rem;
+display: grid;
+grid-template-rows: subgrid;
+grid-row: span 2;
 
 }.box h3{
 padding: 0.5rem;
@@ -42,7 +45,6 @@ justify-content: center;
 align-items: center;
 text-align: center;
 border-bottom: solid 1px var(--text-color-2);
-height: 2rem;
 color: var(--text-color-2);
 }.box p{
 padding: 0.5rem;
