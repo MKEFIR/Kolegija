@@ -16,10 +16,22 @@
      <div class="pod-logo">
         <a href="../index_main.html"><div id="img"></div></a> <!-- Logotyp -->
       <div class="nav">       
-     <input type="checkbox" id="menu-toggle">
-     <label for="menu-toggle" class="menu-icon">
-        ☰
-     </label>
+        <nav class="pod-nav-mobile">
+             <button popovertarget="pod-nav">☰</button>
+
+          <ul id="pod-nav" popover>
+            <li><a href="../Apie/Apie_mus.html">Apie Mus</a></li>
+            <li><a href="../Galerija/Galerija.html">Galerija</a></li>
+            <li><a href="../Kontaktai/Kontaktai.html">Kontaktai</a></li>
+            <li><a href="../Labs/Labs.html">TG Labs</a></li>
+            <li id="active"><a title="Jus eseta cia" href="#">Anketa</a></li>
+                          <div class="pod-SM-mobile">                                               
+          <a href="https://www.facebook.com" target="_blank"><div id="fb"></div></a>
+           <a href="https://www.instagram.com" target="_blank"><div id="in"></div></a>
+            <a href="https://www.x.com" target="_blank"><div id="x"></div></a>
+             <a href="https://www.linkedin.com/" target="_blank"><div id="lin"></div></a>
+         </ul>
+        </nav>
       <nav class="pod-nav">                                           <!-- Navigacja -->
          <ul>
             <li><a href="../Apie/Apie_mus.html">Apie Mus</a></li>
@@ -96,7 +108,7 @@
             <input type="radio" name="Preferred" value="5"><label>Įmonės administravimas</label><br><br>
             </div>
             <label for="place">Pageidaujama darbo vieta</label>
-            <input type="text" id="place" name="place" required="required" placeholder="Miestas, šalis arba regioninė įstaiga..."><br><br>
+            <input style="margin-left: 0px !important;" type="text" id="place" name="place" required="required" placeholder="Miestas, šalis arba regioninė įstaiga..."><br><br>
           </fieldset>
                     <fieldset>
             <legend>Kvalifikacija</legend>
@@ -109,13 +121,13 @@
             <input type="radio" name="Kvalifikacija" value="8+"><label>8+ metai><br><br>
             </div>
             <label for="add-info">Įgūdžiai ir kvalifikacija</label>
-            <input type="text" id="add-info" name="add-info" required="required" placeholder="..."><br><br>
+            <input style="margin-left: 0px !important;" type="text" id="add-info" name="add-info" required="required" placeholder="..."><br><br>
           </fieldset>
           <fieldset>
             <legend>Papildoma informacija</legend>
             <label for="vardas">Kodėl norite prisijungti prie „TerraGroup“?</label>
             <textarea id="vardas" name="opinion" required="required" rows="3" placeholder="..."></textarea><br><br><br><br>
-            <label for="data">Galimybė pradėti</label>
+            <label for="data">Galimybė pradėti</label><br><br>
             <input type="date" id="data" name="data" required="required" placeholder="Pasirinkite datą..."><br><br>
             <label for="vardas">Papildomos pastabos</label>
             <textarea id="vardas" name="additional" required="required" rows="3" placeholder="..."></textarea><br><br>   

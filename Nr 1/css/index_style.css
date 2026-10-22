@@ -54,6 +54,7 @@ text-shadow: 1px 1px whitesmoke;
 main content{
 grid-area: content;
 position: relative;
+width: 100%;
 }main article{
 grid-area: article;
 }main section{
