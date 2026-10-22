@@ -67,7 +67,7 @@ font-weight: bold;}
 main article:nth-child(4) {
     background-image: var(--labs-logo);
     background-repeat: no-repeat;
-    background-size: 25% auto;
+    background-size: 15% auto;
     background-position: 90% 25%;
     border-top: solid 1px var(--text-color-2);
     color: var(--text-color);
