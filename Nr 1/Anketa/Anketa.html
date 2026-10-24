@@ -17,7 +17,7 @@
         <a href="../index_main.html"><div id="img"></div></a> <!-- Logotyp -->
       <div class="nav">       
         <nav class="pod-nav-mobile">
-             <button popovertarget="pod-nav">☰</button>
+             <button popovertarget="pod-nav" aria-label="Toggle menu" class="menu-btn"></button>
 
           <ul id="pod-nav" popover>
             <li><a href="../Apie/Apie_mus.html">Apie Mus</a></li>
@@ -87,7 +87,7 @@
           </fieldset>
           <fieldset>
             <legend>Pareigos ir skyrius</legend>
-            <label for="position">Pareigos, į kurias pretenduojate</label>
+            <label style="margin-left: 0px !important;" for="position">Pareigos, į kurias pretenduojate</label>
         <select id="position" name="position" required>
             <option value="" disabled selected>Pasirinkite pareigas</option>
             <option value="research">Laboratorinių tyrimų asistentas</option>
@@ -100,14 +100,14 @@
             <option value="other">Kita / Neįtraukta į sąrašą pareigos</option>
             </select><br><br><br>
 
-            <label for="Preferred">Pageidaujamas padalinys</label><div>
+            <label style="margin-left: 0px !important;" for="Preferred">Pageidaujamas padalinys</label><div>
             <input type="radio" name="Preferred" value="1"><label>Moksliniai tyrimai ir plėtra</label>
             <input type="radio" name="Preferred" value="2"><label>Žemės ūkio biotechnologijos</label>
             <input type="radio" name="Preferred" value="3"><label>Saugumas ir rizikos valdymas</label>
             <input type="radio" name="Preferred" value="4"><label>Logistika ir regioninės operacijos</label>
             <input type="radio" name="Preferred" value="5"><label>Įmonės administravimas</label><br><br>
             </div>
-            <label for="place">Pageidaujama darbo vieta</label>
+            <label style="margin-left: 0px !important;" for="place">Pageidaujama darbo vieta</label>
             <input style="margin-left: 0px !important;" type="text" id="place" name="place" required="required" placeholder="Miestas, šalis arba regioninė įstaiga..."><br><br>
           </fieldset>
                     <fieldset>
@@ -127,7 +127,7 @@
             <legend>Papildoma informacija</legend>
             <label for="vardas">Kodėl norite prisijungti prie „TerraGroup“?</label>
             <textarea id="vardas" name="opinion" required="required" rows="3" placeholder="..."></textarea><br><br><br><br>
-            <label for="data">Galimybė pradėti</label><br><br>
+            <label for="data">Galimybė pradėti</label>
             <input type="date" id="data" name="data" required="required" placeholder="Pasirinkite datą..."><br><br>
             <label for="vardas">Papildomos pastabos</label>
             <textarea id="vardas" name="additional" required="required" rows="3" placeholder="..."></textarea><br><br>   

@@ -1,7 +1,4 @@
 /*////////////////////Anketa//////////////{//////*/
-
-
-
 form {
     display: flex;
     flex-direction: column;
@@ -39,7 +36,7 @@ fieldset {
     border-radius: 5px;
 }
 fieldset:nth-child(4) {
-input {margin-left: -10px;}
+input, label {margin-left: -10px;}
 }
 fieldset:nth-child(5) {
 input {margin-left: -10px;}

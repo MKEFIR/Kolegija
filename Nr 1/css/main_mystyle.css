@@ -1,4 +1,4 @@
-
+html {scroll-behavior: smooth;}
 body{min-height: 50vw; background-color: var(--body-color); color: var(--text-color-1); font-family: "Roboto", sans-serif; overflow-x: unset;} 
 /*Podstawowy styl do wszystkiego*/
 body::after{
@@ -123,7 +123,8 @@ background-color: rgba(0, 0, 0, 0.0);
    color: var(--text-color-1);
   }
 }
-
+.menu-btn::before { content: "☰"; }
+nav:has(#pod-nav:popover-open) .menu-btn::before { content: "⨉"; }
 /*Liki do Social Media i Wyszukiwarka*/
 .pod-search-SM {
    display: flex;
@@ -134,9 +135,8 @@ background-color: rgba(0, 0, 0, 0.0);
 .pod-search-SM form button{
  width: 30px;
    height: 30px;
-   background-color: transparent;
    border: none;
-
+background-color: rgba(0, 0, 0, 0.0);
 
 }
 #search-form {
@@ -343,7 +343,7 @@ width: 100%;
    display: grid;
    padding: 1rem 1rem;
    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-   gap: 5rem;
+   gap: clamp(1rem, calc(2vw + 1rem) ,5rem);
    perspective: 300px;
 }
 .gallery img{
@@ -351,7 +351,7 @@ width: 100%;
 }
 .gallery img{
      object-fit: cover;
-  aspect-ratio: 3 / 2;
+  aspect-ratio: 4 / 3;
   border-radius: 10px;}
 .gallery div{
 transition: ease-in-out 0.3s;
