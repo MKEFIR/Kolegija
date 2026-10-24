@@ -112,17 +112,16 @@ background-color: rgba(0, 0, 0, 0.0);
    padding: 1rem 0;
    text-align: center;
    border-bottom: 2px solid var(--text-color-2);
-  }
-  li a{
+  a{
    color: var(--text-color-2);
    font-size: clamp(2rem, calc(1.5vw + 0.5rem), 3rem);
    text-decoration: inherit;
    font-weight: bold;
   }
-  li a:hover{
+  a:hover{
    color: var(--text-color-1);
   }
-}
+}}
 .menu-btn::before { content: "☰"; }
 nav:has(#pod-nav:popover-open) .menu-btn::before { content: "⨉"; }
 /*Liki do Social Media i Wyszukiwarka*/
@@ -342,7 +341,7 @@ width: 100%;
 .gallery{
    display: grid;
    padding: 1rem 1rem;
-   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
    gap: clamp(1rem, calc(2vw + 1rem) ,5rem);
    perspective: 300px;
 }
@@ -357,10 +356,6 @@ width: 100%;
 transition: ease-in-out 0.3s;
 position: relative;}
 .gallery div:hover{
-/*width: calc(100% + 1rem);
-height: calc(100% + 1rem);
-left: -0.5rem;
-top: -0.5rem;*/
   transform: translateZ(0.5rem);
 }
 .gallery h3{
@@ -374,7 +369,15 @@ top: -0.5rem;*/
    color: var(--text-color-1);
    font-size: 0.9rem;
    font-weight: light;
+}@media(max-width: 800px){
+.gallery{
+   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
+
+
+}
+
+
 
 /*////////////////////Maps////////////////////*/
 .maps {
